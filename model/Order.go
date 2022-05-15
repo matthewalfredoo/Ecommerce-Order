@@ -5,6 +5,7 @@ import "time"
 type Order struct {
 	ID            uint64    `gorm:"primary_key:auto_increment" json:"id"`
 	IDProduct     uint64    `gorm:"type:int" json:"id_product"`
+	IDPenjual     uint64    `gorm:"type:int" json:"id_penjual"`
 	JumlahProduct uint64    `gorm:"type:int" json:"jumlah_product"`
 	TotalHarga    uint64    `gorm:"type:int" json:"total_harga"`
 	Alamat        string    `gorm:"type:varchar(255)" json:"alamat"`
